@@ -5,7 +5,7 @@ import type React from "react"
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRight, Share2, Mail, BarChart3, LineChart, ArrowRight } from "lucide-react"
+import { ChevronRight, Share2, Mail, BarChart3, LineChart} from "lucide-react"
 import { cn } from "@/lib/utils"
 
 type ServiceCard = {
@@ -110,11 +110,11 @@ export default function Hero() {
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link href="/report" className="text-gray-300 hover:text-white transition-colors relative group">
-                    Bug & Report
+                        Bug & Report
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link href="/help" className="text-gray-300 hover:text-white transition-colors relative group">
-                    Help Desk
+                        Help Desk
                         <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-red-500 transition-all duration-300 group-hover:w-full"></span>
                     </Link>
                     <Link href="/change-log" className="text-gray-300 hover:text-white transition-colors relative group">
@@ -140,7 +140,7 @@ export default function Hero() {
                             <b className="text-red-600"> #TimeToChanges</b>
                         </h1>
                         <p className="mt-6 text-l text-gray-300">
-                            Saatnya berubah! Lupakan cara lama dan sambutlah sistem yang lebih proper. 
+                            Saatnya berubah! Lupakan cara lama dan sambutlah sistem yang lebih proper.
                             Semua ada dalam satu platform terintegrasi. Dari penjualan, monitoring pembangunan hingga akuntansi, semua ada di sini.
                         </p>
                         {/* <div className="mt-8">
@@ -184,7 +184,7 @@ export default function Hero() {
             <div className="relative z-10 container mx-auto px-4 pb-24">
                 <div className="flex flex-col lg:flex-row gap-4">
                     {services.map((service) => (
-                        <div 
+                        <div
                             key={service.id}
                             onClick={() => handleCardClick(service.id)}
                             className={cn(
@@ -258,15 +258,15 @@ export default function Hero() {
 
                                             {/* Button */}
                                             <div className="flex">
-    <Link 
-        href={service.link}
-        target="_blank"
-        className="group inline-flex items-center space-x-2 bg-black/50 hover:bg-black/70 border border-gray-700 px-5 py-3 rounded-full text-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10"
-    >
-        <span>Masuk Console</span>
-        <ChevronRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300" />
-    </Link>
-</div>
+                                                <Link
+                                                    href={service.link}
+                                                    target="_blank"
+                                                    className="group inline-flex items-center space-x-2 bg-black/50 hover:bg-black/70 border border-gray-700 px-5 py-3 rounded-full text-sm transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10"
+                                                >
+                                                    <span>Masuk Console</span>
+                                                    <ChevronRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                                                </Link>
+                                            </div>
                                         </div>
                                     </div>
                                 )}
@@ -276,7 +276,7 @@ export default function Hero() {
                 </div>
             </div>
             <footer className="relative z-10 container mx-auto px-4 py-6 text-center">
-                <p className="text-gray-400">© 2025 SiProper by Sapphire Grup. All rights reserved.</p> 
+                <p className="text-gray-400">© 2025 SiProper by Sapphire Grup. All rights reserved.</p>
             </footer>
         </div>
     )

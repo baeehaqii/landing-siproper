@@ -39,7 +39,7 @@ export default function ServiceCard({ service, isExpanded, onClick }: ServiceCar
           : "w-[100px] md:w-[120px] flex-shrink-0 cursor-pointer hover:bg-gray-800"
       }`}
       style={{
-        height: isExpanded ? "400px" : "400px",
+        height: isExpanded && height ? `${height}px` : "400px",
         backgroundColor: isExpanded ? "rgba(20, 20, 20, 0.8)" : "rgba(30, 30, 30, 0.8)",
       }}
       onClick={!isExpanded ? onClick : undefined}
